@@ -1,0 +1,26 @@
+
+body {
+            background-image: url("japan_background.jpg");
+            margin: auto;
+            height: 100vh;
+            width: 50vw;
+            background-repeat: no-repeat;
+			background-size: cover;
+			font-family: Arial, sans-serif;
+			color: #ffffff;
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px); /* for Safari */
+		}
+
+textarea {
+			width: 35vw;
+			height: 20vh;
+			margin: 0vw auto;
+			display: block;
+			background-color: rgba(255, 255, 255, 0.5);
+			border: none;
+			padding: 0vw;
+			box-sizing: border-box;
+			font-size: 16px;
+			resize: none;
+		}

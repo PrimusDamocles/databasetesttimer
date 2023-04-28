@@ -20,10 +20,10 @@ migrate = Migrate(app, db)
 @app.route("/", methods=['GET', 'POST'])
 def timer():
     if request.method == 'POST':
-        new_message = Posts(message= request.form['message'])
+        new_message = Posts(message=request.form['message'])
         db.session.add(new_message)
         db.session.commit()
     messages = Posts.query.order_by(Posts.created_at.desc()).all()
-    return render_template('timer.html', message=messages)
+    return render_template('timer.html', messages=messages)
 
 
